@@ -46,7 +46,6 @@ var req = http.request(options, function(res) {
 			    transporter.sendMail(sendOption, function (err, info){
 					
 					//kill the process once it's done
-					req.end();
 					process.exit();
 			    });
 			});
@@ -54,8 +53,14 @@ var req = http.request(options, function(res) {
 	    else {
 
 	    	//page size hasn't changed. no change in webpage. kill the process. 
-	    	req.end();
 	    	process.exit(); 
 	    }
 	});   
 });
+//make sure will end the request if we haven't
+req.end();
+
+//handle errors
+req.on('error', function (e){
+	console.log('Problem with request: ', e.message);
+})
