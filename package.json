@@ -1,0 +1,23 @@
+{
+  "name": "simple-http-change-detector",
+  "version": "0.1.0",
+  "description": "A simple node app to detect when a webpage has changed.",
+  "dependencies": {
+    "nodemailer": "~1.3.0"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jssolichin/infinite-mondrian.git"
+  },
+  "author": "Jonathan Solichin",
+  "license": "The MIT License (MIT)",
+  "bugs": {
+    "url": "https://github.com/jssolichin/infinite-mondrian/issues"
+  },
+  "homepage": "https://github.com/jssolichin/infinite-mondrian"
+}
